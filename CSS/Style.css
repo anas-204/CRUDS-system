@@ -1,0 +1,89 @@
+body{
+    background-color: #F7ECDE;
+}
+.header h1{
+    position: relative;
+    font: 500  50px/60px Pacifico;
+    color:rgb(53, 46, 40);
+    width: fit-content;
+    z-index: 1;
+}
+.header h1::before{
+    content: "";
+    position: absolute;
+    background-color: #FEC260;
+    width: 100%;
+    bottom: 0;
+    height: 35%;
+    z-index: -1;
+    transition: all 0.5s ease;
+}
+.header h1:hover::before{
+    height: 60%;
+}
+.app-body{
+    border-block: 2px dotted rgb(33, 37, 41);
+}
+.app-body h2{
+    font: 500 25px/30px Righteous;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-image:linear-gradient(to right, #40A55B, #B3AC4A);
+}
+form + button{
+    position: absolute;
+    width: 150px;
+    height:35px;
+    left:calc((100% - 150px)/2);
+    background-color: #BB4120;
+    color:#F7ECDE;
+}
+label{
+    font: 600 16px/24px PT Sans Caption;
+}
+table{
+    font: 600 16px/24px PT Sans Caption;
+    height: 40px;
+}
+.card-container{
+    background-color: #0007;
+    z-index: 10;
+}
+.card-box{
+    padding: 15px;
+    width: 500px;
+}
+.balls{
+    width: fit-content;
+    display: flex;
+}
+.balls .ball{
+    margin-right: 10px;
+    display: block;
+    width: 15px;
+    height:15px;
+}
+.balls .ball:nth-child(1){
+    background-color: #F15F5D;
+}
+.balls .ball:nth-child(2){
+    background-color: #FEBE2E;
+}
+.balls .ball:nth-child(3){
+    background-color: #4DB748;
+}
+.exit i{
+    font-size: 25px;
+}
+.middle-section p{
+    font:400 21px/27px Bree Serif;
+}
+.bottom-section p{
+    font: 400 18px/27px PT Sans Caption;
+}
+.bottom-section p i{
+    margin-right: 5px;
+}
+
+
+
